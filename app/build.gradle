@@ -44,3 +44,12 @@ test {
 jacocoTestReport {
     dependsOn test // tests are required to run before generating the report
 }
+
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'arnold.kata.gradle.ArnoldEnumTypes' // Cambia esto por la ruta real de tu clase
+        )
+    }
+}
