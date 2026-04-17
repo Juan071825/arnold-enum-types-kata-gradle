@@ -21,6 +21,7 @@ repositories {
 dependencies {
     testImplementation 'junit:junit:[4.13.2,)'
     errorprone 'com.google.errorprone:error_prone_core:2.28.0'
+    testImplementation 'org.assertj:assertj-core:3.25.3'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -32,7 +33,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'arnold.kata.gradle.App'
+    mainClass = 'arnold.kata.gradle.ArnoldEnumTypes'
 }
 
 test {
